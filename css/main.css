@@ -124,12 +124,22 @@ section .right {
     float: right;
     width: 40%;
 }
-@media screen and (max-width: 480px) {
-    .left, 
-    .right {
+@media screen and (max-width: 40.0rem) {
+    section .left, 
+    section .right {
         float: none;
         width: auto;
     }
+
+    .opener {
+        font-size: 1rem;
+    }
+
+    .opener h3 {
+        font-size: 2rem;
+    }
+
+
 }
 section img {
     width: auto;
@@ -140,6 +150,7 @@ section img {
     color: black;
     background-color: white;
     background-image: url(../img/pink_rice.png);
+    background-attachment: fixed;
 }
 
 .credits {
